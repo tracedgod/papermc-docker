@@ -75,6 +75,9 @@ Once the image is downloaded, type `docker run -p 25565:25565 tracedgod/papermc`
   - By default, this environment variable is set to the empty string.
   - `-e JAVA_OPTS="<-XX:+UseConcMarkSweepGC -XX:+UseParNewGC>"`
 
+### Building
+  - __*WIP*__
+
 ## Credits
 
   - [Phyremaster](https://github.com/Phyremaster/papermc-docker) for the `papermc.sh` script + variables.
