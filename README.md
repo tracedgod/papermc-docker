@@ -40,7 +40,7 @@ Once the image is downloaded, type `docker run -p 25565:25565 tracedgod/papermc`
   - Another option is to automatically restart the container unless you manually stop it with `docker stop <container-id>`
   - It is highly recommended to only stop the server from its console __*(not via Docker)*__.
   - `--restart on-failure`
-  - `--restart unless-stopped'
+  - `--restart unless-stopped`
 
 - Name
   - Use this to set a name for your newly created container.
