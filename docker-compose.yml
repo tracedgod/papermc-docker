@@ -17,7 +17,7 @@ services:
        # Change below env variables to desired values, default for MC_VERSION + PAPER_BUILD is latest, MC_RAM + JAVA_OPTS are optional.
        - MC_VERSION=latest
        - PAPER_BUILD=latest
-       - MC_RAM=1G
+       - MC_RAM=
        - JAVA_OPTS=
      restart: unless-stopped
      volumes:
