@@ -76,7 +76,41 @@ Once the image is downloaded, type `docker run -p 25565:25565 tracedgod/papermc`
   - `-e JAVA_OPTS="<-XX:+UseConcMarkSweepGC -XX:+UseParNewGC>"`
 
 ### Building
-  - __*WIP*__
+  - To build, clone this git repo with `git clone https://github.com/tracedgod/papermc-docker.git` into your terminal/cmd window.
+  - Change directory to newly cloned repo with `cd papermc-docker`
+  - Begin building the image with `docker build .`
+  - Once completed, the image will not be tagged, so you can tag it with `docker tag <container-id> <your-new-tag>`
+
+### Docker-Compose
+  - I have included a template `docker-compose.yml` in the github repo for convienience. You may also view the file below:
+```yaml
+version: "3.8"
+
+services:
+   papermc:
+     # Change container_name to desired name.
+     container_name: papermc
+     hostname: papermc
+     image: tracedgod/papermc:latest
+     # For docker attach functionality, both stdin_open and tty must be set to true.
+     stdin_open: true
+     tty: true
+     ports:
+       - '25565:25565/tcp'
+      # Uncomment below line for RCON functionality.
+      # - '25575:25575/tcp'
+     environment:
+       # Change below env variables to desired values, default for MC_VERSION + PAPER_BUILD is latest, MC_RAM + JAVA_OPTS are optional.
+       - MC_VERSION=latest
+       - PAPER_BUILD=latest
+       - MC_RAM=1G
+       - JAVA_OPTS=
+     restart: unless-stopped
+     volumes:
+      # Uncomment + Change this to server files path. For rw access on host, create a new group with GID 5000 and add yourself to said group.
+      # - '<path-to-server-volume>:/papermc'
+```
+
 
 ## Credits
 
