@@ -5,6 +5,7 @@ MAINTAINER tracedgod <bowestrace@gmail.com>
 run apt-get update \
 && apt-get install -y wget \
 && apt-get install -y jq \
+&& apt-get install -y nano \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/* \
 && mkdir /papermc \
@@ -26,4 +27,6 @@ CMD ["sh", "./papermc.sh"]
 
 EXPOSE 25565/tcp
 EXPOSE 25565/udp
+EXPOSE 25575/tcp
+EXPOSE 25575/udp
 VOLUME /papermc
