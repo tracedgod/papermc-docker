@@ -1,3 +1,6 @@
+![Logo](https://miro.medium.com/max/617/1*v9KNKSA_Pz4lywnXWNh1SQ.png)
+
+
 # PaperMC-Docker
 A Docker image for setting up a PaperMC Minecraft Server. This image is based off of openjdk:16-slim from Docker Hub for minimal resources required for a Minecraft Server to run.
 
