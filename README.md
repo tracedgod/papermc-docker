@@ -111,7 +111,6 @@ services:
       # - '<path-to-server-volume>:/papermc'
 ```
 
-
 ## Credits
 
   - [Phyremaster](https://github.com/Phyremaster/papermc-docker) for the `papermc.sh` script + variables.
