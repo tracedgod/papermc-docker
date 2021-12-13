@@ -1,12 +1,13 @@
 # Created by tracedgod. https://github.com/tracedgod
 # Pull openjdk image from Docker Hub
-FROM openjdk:16-slim
+FROM openjdk:17-slim
 
 # Set Maintainer
 MAINTAINER tracedgod <bowestrace@gmail.com>
 
 # Install required apps and cleanup + create non-root user with GID 5000
 run apt-get update \
+&& apt-get dist-upgrade -y \
 && apt-get install -y wget \
 && apt-get install -y jq \
 && apt-get install -y nano \
