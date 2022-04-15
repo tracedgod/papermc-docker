@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Set umask
+umask 0007
+
 # Enter server directory
 cd papermc
 
