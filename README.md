@@ -1,4 +1,6 @@
-![Logo](https://miro.medium.com/max/617/1*v9KNKSA_Pz4lywnXWNh1SQ.png)
+<p align="center">
+  <img width="650" height="400" src="https://miro.medium.com/max/617/1*v9KNKSA_Pz4lywnXWNh1SQ.png">
+</p>
 
 
 # PaperMC-Docker
