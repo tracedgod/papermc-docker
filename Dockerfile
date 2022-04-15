@@ -3,10 +3,10 @@
 FROM openjdk:17-slim
 
 # Set Maintainer
-MAINTAINER tracedgod <bowestrace@gmail.com>
+LABEL tracedgod <bowestrace@gmail.com>
 
 # Install required apps and cleanup + create non-root user with GID 5000
-run apt-get update \
+RUN apt-get update \
 && apt-get dist-upgrade -y \
 && apt-get install -y wget \
 && apt-get install -y jq \
