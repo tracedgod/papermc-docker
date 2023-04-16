@@ -10,9 +10,12 @@ services:
      stdin_open: true
      tty: true
      ports:
+      # - '8123:8123/tcp'        # Dynmaps webserver port
+      # If you are using Geyser + Floodgate, uncomment both '19132' ports
+      # - '19132:19132/tcp'
+      # - '19132:19132/udp'
        - '25565:25565/tcp'
-      # Uncomment below line for RCON functionality.
-      # - '25575:25575/tcp'
+      # - '25575:25575/tcp'      # Server RCON port
      environment:
        # Change below env variables to desired values, default for MC_VERSION + PAPER_BUILD is latest, MC_RAM + JAVA_OPTS are optional.
        - MC_VERSION=latest
