@@ -1,6 +1,6 @@
 # Created by tracedgod. https://github.com/tracedgod
 # Pull openjdk image from Docker Hub
-FROM openjdk:19-slim
+FROM openjdk:21-slim
 
 # Set Maintainer
 LABEL tracedgod <bowestrace@gmail.com>
