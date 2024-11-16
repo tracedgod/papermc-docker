@@ -1,6 +1,6 @@
 # Created by tracedgod. https://github.com/tracedgod
 # Pull openjdk image from Docker Hub
-FROM openjdk:21-slim
+FROM openjdk:8-slim
 
 # Install required apps and cleanup + create non-root user with GID 5000
 RUN apt-get update \

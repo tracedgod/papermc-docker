@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
    papermc:
      # Change container_name to desired name.

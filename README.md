@@ -89,8 +89,6 @@ Once the image is downloaded, type `docker run -p 25565:25565 tracedgod/papermc`
 ### Docker-Compose
   - I have included a template `docker-compose.yml` in the github repo for convienience. You may also view the file below:
 ```yaml
-version: "3.8"
-
 services:
    papermc:
      # Change container_name to desired name.
