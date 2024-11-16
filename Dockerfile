@@ -2,9 +2,6 @@
 # Pull openjdk image from Docker Hub
 FROM openjdk:21-slim
 
-# Set Maintainer
-LABEL tracedgod <bowestrace@gmail.com>
-
 # Install required apps and cleanup + create non-root user with GID 5000
 RUN apt-get update \
 && apt-get dist-upgrade -y \
